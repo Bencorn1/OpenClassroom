@@ -1,0 +1,150 @@
+/*
+CSS for OPEN CLASSROOMS
+*/
+
+h1, h2 {
+font-weight: bold;
+font-family: Helvetica, Arial, sans-serif;
+font-size: medium;
+color: blueviolet;
+}
+
+title {
+  font-style: normal;
+  color: blueviolet;
+  font-weight: bolder;
+  font-family: Arial;
+  font-size: large;
+  padding: 15px;
+  background-color: white;
+  position: relative;
+  text-align: left;
+}
+
+body {
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color: wheat;
+  line-height: 125%;
+  padding: 15px;
+  text-align: justify;
+  }
+
+li {
+  font-size: small;
+  }
+
+#main-header {
+  background-color: blueviolet;
+  font-style: normal;
+  color: cornsilk;
+  background-origin: padding-box;
+  border-top: 3px solid blueviolet;
+  border-bottom: 3px solid blueviolet;
+  text-align: justify;
+}
+
+.navigation {
+  font-size: small;
+  position: absolute;
+  padding-top: 3px;
+  font-style: normal;
+}
+
+h6 {
+  font-size: small;
+  font-style: normal;
+  position: sticky;
+  text-align: right;
+}
+  
+#tagline {
+  font-size: medium;
+  font-style: normal;
+  border-style: dotted;
+  border-color: powderblue;
+  padding: 0px;
+  background-color: peru;
+  text-align: center;
+}
+
+video {
+  border-style: dotted;
+  border-color: blueviolet;
+  margin-bottom: 40px; 
+  margin-top: 40px;
+}
+
+#main-content {
+  font-display: 1px;
+  font-size-adjust: inherit;
+  page-break-after: none;
+  padding: 5px;
+  margin-bottom: 30px; 
+  margin-top: 30px;
+  text-align: justify;
+  font-size: small;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+}
+
+blockquote{
+  border-style: dashed;
+  border-color: rgb(0, 255, 255);
+  background-color: rgb(128, 128, 128);
+  padding: 0px;
+  margin-bottom: 40px; 
+  margin-top: 40px;
+  text-align: justify;
+}
+
+.prerequisites {
+  border-style: dotted;
+  border-color: blueviolet;
+  background-color:  blueviolet;
+  padding: 10px;
+  margin-bottom: 30px; 
+  margin-top: 30px;
+  font-size: small;
+  text-align: left;
+}
+
+.buttonarea {
+  background-origin: padding-box;
+  border-style: inherit;
+  border-color: blueviolet;
+  display: inherit;
+  margin-bottom: 30px; 
+  margin-top: 30px;
+  padding: 10px;
+  font-display: 50px;
+  text-align: center;
+  box-align: center;
+}
+
+section {
+  border-bottom: #7da5d8;
+  border-bottom-style: ridge;
+  border-bottom-width: 25px;
+  list-style-position: inherit;
+  text-decoration-line: none;
+  padding-block-end: 10px;
+  line-height: 50px;
+  font-size: large;
+  font-style: normal;
+  font-weight: bolder;
+  text-align: justify;
+}
+
+#teacher {
+  background-origin: padding-box;
+  border-style: groove;
+  border-color: rgba(128, 128, 128, 0.952);
+  background-color: rgba(128, 128, 128, 0.952);
+  font-display: 1px;
+  padding: 15px;
+  text-align: center;
+}
