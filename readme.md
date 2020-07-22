@@ -1,0 +1,1 @@
+# A simple website to teach the usage of html/css
