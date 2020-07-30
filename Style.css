@@ -1,15 +1,29 @@
-/*
 CSS for OPEN CLASSROOMS
 */
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url('./font/Montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat normal';
+  src: url('./font/Montserrat/Montserrat-Regular.ttf');
+}
+
 body {
   background-color: white;
   line-height: 160%;
-  padding-top: 0px;
-  padding-bottom: 20px;
-  text-align: justify;
-  }
+@@ -22,85 +11,76 @@ body {
+}
 
 #container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7rem 0 7rem;
+}
+
+.realright {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,36 +32,69 @@ body {
 
 #main {
   font-size: 30px;
+  font-family: Montserrat Bold;
   font-weight: bolder;
   color: #7451eb;
   font-family: Arial;
 }
 
 .left ul {
+  margin-top: 20px;
   list-style: none;
 }
 
 .left ul li {
   display: inline-block;
+  margin-right: 20px;
+}
+
+.left ul li:last-child {
+  border-left: solid 1px #e0e0e0;
+  padding-left: 30px;
 }
 
 .left ul li a {
+  font-family: Montserrat normal;
+  font-size: 16px;
+  text-decoration: none;
   float: left;
 }
 
 .left ul li a:hover {
   color: #7451eb;
 }
+
+#right {
+  display: flex;
+  align-items: center;
+  margin: auto 0;
+}
+
+.icon {
+  font-size: 25px !important;
+  font-weight: normal;
+}
+
 .right {
   float: right;
 }
 
+.icon:hover {
+  color: #7451eb;
+}
+
+/* .right ul li a {
 .left ul li a {
   font-size: 18px;
   margin-right: 10px;
   font-weight: normal;
   color: black;
+} */
   text-decoration: none;
+}
+
+#right button {
+  padding: 11px 17px;
 }
 
 #right #sign-in {
@@ -63,6 +110,7 @@ body {
   border-style: double;
   border-radius: 5px;
   border-color: #7451eb;
+  margin-left: 20px;
 }
 
 #right #sign-in:hover {
@@ -84,213 +132,46 @@ body {
 }
 
 #nav-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-#nav-container {
-  background-color: #7451eb;
-  margin-left: -10px;
+@@ -115,11 +95,6 @@ body {
   margin-right: -7px;
-}
-
-#nav-container .nav {
-  color: white;
-  list-style: none;
-}
-
-#nav-container .nav li {
-  display: inline-block;
 }
 
 #nav-container .nav li a {
   color: white;
   text-decoration: none;
 }
-#nav-container .nav #text {
-  text-align: left;
-  margin-left: 10px;
-}
-#nav-container h1 {
-  font-size: 30px;
-  font-weight: bolder;
+
+#nav-container .nav {
   color: white;
-  margin-top: 5px;
-  margin-left: 350px;
-}
-
-#nav-container ul {
   list-style: none;
-}
-
-#nav-container ul li {
+@@ -129,16 +104,10 @@ body {
   display: inline-block;
 }
 
-#nav-container ul li {
-  float: left;
-  color: white;
-}
 
-#nav-container ul #time {
-  margin-left: 320px;
-}
-
-#nav-container ul #type {
-  margin-left: 30px;
-}
-
-h6 {
-  text-align: right;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-right: 300px;
-  font-weight: lighter; 
-}
-
-.body-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.body-container {
-  padding-bottom: 150px;
-  margin-right: 520px;
-  margin-left: 300px;
-}
-
-.body-container #subscribe {
-  background-color: peachpuff;
-  font-size: 15px;
-  font-weight: lighter;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 25px;
-  margin-right: 0px;
+#nav-container .nav #home {
   text-align: left;
+  margin-left: 220px;
 }
 
-video {
-  background-color: rgba(176, 230, 230, 0.5);
+#nav-container .nav #course {
+  text-align: left;
+  margin-left: 10px;
 }
 
-.body-container .main-content {
-  font-family: sans-serif;
-  font-display: lighter;
-  font-size: 18px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.body-container blockquote {
-  font-size: 17px;
-  font-family: sans-serif;
-  font-weight: lighter;
-  background-color: rgba(220, 225, 220, 0.5);
-  padding-right: 80px;
-  padding-left: 25px;
-  margin-right: 10px;
-  margin-left: 12px;
-}
-
-.body-container .prerequisite {
-  background-color: rgb(255, 192, 211, 0.4);
-  font-size: 20px;
-  margin-right: 10px;
-  margin-left: 12px;
-  padding-top: 8px;
-  padding-right: 0px;
-  padding-bottom: 8px;
-  padding-left: 40px;
-}
-
-.body-container .start #the-course {
-  font-size: 18px;
-  font-display: bolder;
+#nav-container .nav li a {
   color: white;
-  background-color: #7451eb;
-  border-style: none;
-  border-radius: 5px;
-  margin-top: 25px;
-  margin-left: 260px;
-  padding-top: 17px;
-  padding-right: 20px;
-  padding-bottom: 17px;
-  padding-left: 40px;
+  text-decoration: none;
 }
 
-.body-container h4 {
-  color: #7451eb;
-  background-color: white;
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  margin-left: 290px;
-  margin-right: 280px;
-  font-size: 12px;
-}
-
-.body-container h4:hover {
-  background-color: rgba(137, 43, 226, 0.2);
-}
-
-.body-container section h2 {
-  font-family: sans-serif;
-  font-size: 30px;
-}
-.body-container .massive-list #first-part {
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-.body-container .massive-list #second-part {
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-.body-container .massive-list #third-part {
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-.body-container .massive-list #fourth-part {
-  font-weight: bolder;
-  font-size: 25px;
-}
-
-.body-container .massive-list #fifth-part #certificate {
-  font-weight: normal;
-  font-size: 20px;
-}
-
-.biography {
-  background-color: rgba(128, 128, 128, 0.4);
-  margin-left: -10px;
-  margin-right: 5px;
-  padding-top: 20px;
-  padding-right: 300px;
-  padding-bottom: 40px;
-  padding-left: 360px;
-}
-
-.biography h2 {
-  font-size: 25px;
-  font-weight: bolder;
-}
-
-.biography h3 {
-  padding-left: 80px;
-  font-size: 20px;
-  color: #7451eb;
-  line-height: 4px;
-}
-
-.biography p {
+#nav-container .nav #text {
+  text-align: left;
+  margin-left: 10px;
+@@ -322,4 +291,6 @@ video {
   padding-left: 80px;
   font-size: 20px;
   font-family: serif;
-}
+} 
 
-@media screen and (max-width:)
+
+@media screen and (max-width:) 
