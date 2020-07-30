@@ -1,17 +1,6 @@
 /*
 CSS for OPEN CLASSROOMS
 */
-
-@font-face {
-  font-family: 'Montserrat Bold';
-  src: url('./font/Montserrat/Montserrat-ExtraBold.ttf');
-}
-
-@font-face {
-  font-family: 'Montserrat normal';
-  src: url('./font/Montserrat/Montserrat-Regular.ttf');
-}
-
 body {
   background-color: white;
   line-height: 160%;
@@ -22,76 +11,58 @@ body {
 
 #container {
   display: flex;
-  justify-content: space-between;
-  padding: 0 7rem 0 7rem;
-}
-
-.realright {
-  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 370px;
 }
 
 #main {
   font-size: 30px;
-  font-family: Montserrat Bold;
   font-weight: bolder;
   color: #7451eb;
+  font-family: Arial;
 }
 
 .left ul {
-  margin-top: 20px;
   list-style: none;
 }
 
 .left ul li {
   display: inline-block;
-  margin-right: 20px;
-}
-
-.left ul li:last-child {
-  border-left: solid 1px #e0e0e0;
-  padding-left: 30px;
 }
 
 .left ul li a {
-  font-family: Montserrat normal;
-  font-size: 16px;
-  text-decoration: none;
+  float: left;
 }
 
 .left ul li a:hover {
   color: #7451eb;
 }
-
-#right {
-  display: flex;
-  align-items: center;
-  margin: auto 0;
+.right {
+  float: right;
 }
 
-.icon {
-  font-size: 25px !important;
-  font-weight: normal;
-}
-
-.icon:hover {
-  color: #7451eb;
-}
-
-/* .right ul li a {
+.left ul li a {
+  font-size: 18px;
   margin-right: 10px;
   font-weight: normal;
   color: black;
-} */
+  text-decoration: none;
+}
 
-#right button {
-  padding: 11px 17px;
+#right #sign-in {
+  margin-top: 15px;
+  margin-left: 280px;
+  padding-top: 11px;
+  padding-right: 17px;
+  padding-bottom: 11px;
+  padding-left: 17px;
   background-color: white;
   color: #7451eb;
   font-weight: bolder;
   border-style: double;
   border-radius: 5px;
   border-color: #7451eb;
-  margin-left: 20px;
 }
 
 #right #sign-in:hover {
@@ -99,8 +70,17 @@ body {
 }
 
 #right #sign-out {
+  margin-top: 15px;
+  margin-right: 50px;
+  padding-top: 13px;
+  padding-right: 13px;
+  padding-bottom: 13px;
+  padding-left: 13px;
   background-color: #7451eb;
   color: white;
+  font-weight: bolder;
+  border-style: none;
+  border-radius: 5px;
 }
 
 #nav-container {
@@ -115,11 +95,6 @@ body {
   margin-right: -7px;
 }
 
-#nav-container .nav li a {
-  color: white;
-  text-decoration: none;
-}
-
 #nav-container .nav {
   color: white;
   list-style: none;
@@ -129,16 +104,10 @@ body {
   display: inline-block;
 }
 
-#nav-container .nav #home {
-  text-align: left;
-  margin-left: 220px;
+#nav-container .nav li a {
+  color: white;
+  text-decoration: none;
 }
-
-#nav-container .nav #course {
-  text-align: left;
-  margin-left: 10px;
-}
-
 #nav-container .nav #text {
   text-align: left;
   margin-left: 10px;
@@ -323,3 +292,5 @@ video {
   font-size: 20px;
   font-family: serif;
 }
+
+@media screen and (max-width:)
